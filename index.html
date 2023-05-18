@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Modern normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Styles - scss -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__container">
+        <a class="logo" href="index.html">
+          <svg class="logo__icon" width="40" height="35">
+            <use href="./image/icons.svg#logo"></use>
+          </svg>
+          Finance<span class="logo--span">Ledger</span>
+        </a>
+        <nav class="nav">
+          <li class="nav__item"><a href="" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="" class="nav__link">Cases</a></li>
+          <li class="nav__item"><a href="" class="nav__link">Blog</a></li>
+          <li class="nav__item"><a href="" class="nav__link">Contact</a></li>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero__container">
+          <h1 class="hero__title">The Sky Is The Limit</h1>
+          <p class="hero__text">We provide world class financial assistance</p>
+          <button class="btn" type="button">
+            <svg class="btn__icon" width="9" height="18">
+              <use href="./image/icons.svg#angle-right"></use>
+            </svg>
+            Read More
+          </button>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="about">
+        <div class="about__container">
+          <h2 class="visually-hidden">About</h2>
+          <ul class="about__list card-set">
+            <li class="about__item card-set__item">
+              <div class="about__icon-wrapper">
+                <svg class="about__icon" width="34" height="34">
+                  <use href="./image/icons.svg#university"></use>
+                </svg>
+              </div>
+              <h3 class="about__subtitle">Investmant Banking</h3>
+              <p class="about__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur,
+                necessitatibus!
+              </p>
+            </li>
+            <li class="about__item card-set__item">
+              <div class="about__icon-wrapper">
+                <svg class="about__icon" width="34" height="34">
+                  <use href="./image/icons.svg#book-reader"></use>
+                </svg>
+              </div>
+              <h3 class="about__subtitle">Portfolio Manager</h3>
+              <p class="about__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur,
+                necessitatibus!
+              </p>
+            </li>
+            <li class="about__item card-set__item">
+              <div class="about__icon-wrapper">
+                <svg class="about__icon" width="34" height="34">
+                  <use href="./image/icons.svg#icon-pencil"></use>
+                </svg>
+              </div>
+              <h3 class="about__subtitle">Tax & Custudio</h3>
+              <p class="about__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur,
+                necessitatibus!
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Solutions  -->
+      <section class="solutions">
+        <div class="solutions__container">
+          <picture>
+            <source
+              media="(min-width:1360px)"
+              srcset="
+                ./image\solutions\solutions-d-@1x.jpg 1x,
+                ./image\solutions\solutions-d-@2x.jpg 1x
+              "
+            />
+            <source
+              media="(min-width:768px)"
+              srcset="
+                ./image\solutions\solutions-t-@1x.jpg 1x,
+                ./image\solutions\solutions-t-@2x.jpg 1x
+              "
+            />
+            <source
+              media="(min-width:320px)"
+              srcset="
+                ./image\solutions\solutions-m-@1x.jpg 1x,
+                ./image\solutions\solutions-m-@2x.jpg 1x
+              "
+            />
+            <img
+              class="solutions__img"
+              src="./image\solutions\solutions-m-@1x.jpg"
+              alt="foto team"
+            />
+          </picture>
+
+          <div class="solutions__content">
+            <p class="uppertitle">What you are looking for</p>
+            <h2 class="title">We provide bespoke solutions</h2>
+            <p class="solutions__description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos
+              quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores
+              itaque rerum temporibus doloribus iste maiores deleniti?
+            </p>
+            <a class="btn__link" href="">Read More</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cases -->
+      <section class="cases">
+        <div class="cases__container">
+          <p class="uppertitle cases__uppertitle">This is what we do</p>
+          <h2 class="title">Business Cases</h2>
+          <p class="cases__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!
+          </p>
+          <ul class="cases__list card-set">
+            <li class="cases__item card-set__item">
+              <img
+                class="cases__img"
+                srcset="
+                  ./image/cases/cases-1_m-264.jpg   264w,
+                  ./image/cases/cases-1_m-264x2.jpg 528w,
+                  ./image/cases/cases-1_t-172.jpg   172w,
+                  ./image/cases/cases-1_t-172x2.jpg 344w,
+                  ./image/cases/cases-1_d-320.jpg   320w,
+                  ./image/cases/cases-1_d-320x2.jpg 640w
+                "
+                src="./image/cases/cases-1_m-264.jpg"
+                size="
+                (min-width:1360px) 320px, 
+                (min-width:768px) 172px,  
+                (min-width:320px) 264px, 
+                100vw"
+                alt="image-cases-1"
+              />
+            </li>
+
+            <li class="cases__item card-set__item">
+              <img
+                class="cases__img"
+                srcset="
+                  ./image/cases/cases-2_m-264.jpg   264w,
+                  ./image/cases/cases-2_m-264x2.jpg 528w,
+                  ./image/cases/cases-2_t-172.jpg   172w,
+                  ./image/cases/cases-2_t-172x2.jpg 344w,
+                  ./image/cases/cases-2_d-320.jpg   320w,
+                  ./image/cases/cases-2_d-320x2.jpg 640w
+                "
+                src="./image/cases/cases-2_m-264.jpg"
+                size="
+                (min-width:1360px) 320px, 
+                (min-width:768px) 172px,  
+                (min-width:320px) 264px, 
+                100vw"
+                alt="image-cases-2"
+              />
+            </li>
+
+            <li class="cases__item card-set__item">
+              <img
+                class="cases__img"
+                srcset="
+                  ./image/cases/cases-3_m-264.jpg   264w,
+                  ./image/cases/cases-3_m-264x2.jpg 528w,
+                  ./image/cases/cases-3_t-172.jpg   172w,
+                  ./image/cases/cases-3_t-172x2.jpg 344w,
+                  ./image/cases/cases-3_d-320.jpg   320w,
+                  ./image/cases/cases-3_d-320x2.jpg 640w
+                "
+                src="./image/cases/cases-3_m-264.jpg"
+                size="
+                (min-width:1360px) 320px, 
+                (min-width:768px) 172px,  
+                (min-width:320px) 264px, 
+                100vw"
+                alt="image-cases-3"
+              />
+            </li>
+
+            <li class="cases__item card-set__item">
+              <img
+                class="cases__img"
+                srcset="
+                  ./image/cases/cases-4_m-264.jpg   264w,
+                  ./image/cases/cases-4_m-264x2.jpg 528w,
+                  ./image/cases/cases-4_t-172.jpg   172w,
+                  ./image/cases/cases-4_t-172x2.jpg 344w,
+                  ./image/cases/cases-4_d-320.jpg   320w,
+                  ./image/cases/cases-4_d-320x2.jpg 640w
+                "
+                src="./image/cases/cases-4_m-264.jpg"
+                size="
+                (min-width:1360px) 320px, 
+                (min-width:768px) 172px,  
+                (min-width:320px) 264px, 
+                100vw"
+                alt="image-cases-4"
+              />
+            </li>
+
+            <li class="cases__item card-set__item">
+              <img
+                class="cases__img"
+                srcset="
+                  ./image/cases/cases-5_m-264.jpg   264w,
+                  ./image/cases/cases-5_m-264x2.jpg 528w,
+                  ./image/cases/cases-5_t-172.jpg   172w,
+                  ./image/cases/cases-5_t-172x2.jpg 344w,
+                  ./image/cases/cases-5_d-320.jpg   320w,
+                  ./image/cases/cases-5_d-320x2.jpg 640w
+                "
+                src="./image/cases/cases-5_m-264.jpg"
+                size="
+                (min-width:1360px) 320px, 
+                (min-width:768px) 172px,  
+                (min-width:320px) 264px, 
+                100vw"
+                alt="image-cases-5"
+              />
+            </li>
+
+            <li class="cases__item card-set__item">
+              <img
+                class="cases__img"
+                srcset="
+                  ./image/cases/cases-6_m-264.jpg   264w,
+                  ./image/cases/cases-6_m-264x2.jpg 528w,
+                  ./image/cases/cases-6_t-172.jpg   172w,
+                  ./image/cases/cases-6_t-172x2.jpg 344w,
+                  ./image/cases/cases-6_d-320.jpg   320w,
+                  ./image/cases/cases-6_d-320x2.jpg 640w
+                "
+                src="./image/cases/cases-6_m-264.jpg"
+                size="
+                (min-width:1360px) 320px, 
+                (min-width:768px) 172px,  
+                (min-width:320px) 264px, 
+                100vw"
+                alt="image-cases-6"
+              />
+            </li>
+
+            <li class="cases__item card-set__item">
+              <img
+                class="cases__img"
+                srcset="
+                  ./image/cases/cases-7_m-264.jpg   264w,
+                  ./image/cases/cases-7_m-264x2.jpg 528w,
+                  ./image/cases/cases-7_t-172.jpg   172w,
+                  ./image/cases/cases-7_t-172x2.jpg 344w,
+                  ./image/cases/cases-7_d-320.jpg   320w,
+                  ./image/cases/cases-7_d-320x2.jpg 640w
+                "
+                src="./image/cases/cases-7_m-264.jpg"
+                size="
+                (min-width:1360px) 320px, 
+                (min-width:768px) 172px,  
+                (min-width:320px) 264px, 
+                100vw"
+                alt="image-cases-7"
+              />
+            </li>
+
+            <li class="cases__item card-set__item">
+              <img
+                class="cases__img"
+                srcset="
+                  ./image/cases/cases-8_m-264.jpg   264w,
+                  ./image/cases/cases-8_m-264x2.jpg 528w,
+                  ./image/cases/cases-8_t-172.jpg   172w,
+                  ./image/cases/cases-8_t-172x2.jpg 344w,
+                  ./image/cases/cases-8_d-320.jpg   320w,
+                  ./image/cases/cases-8_d-320x2.jpg 640w
+                "
+                src="./image/cases/cases-8_m-264.jpg"
+                size="
+                (min-width:1360px) 320px, 
+                (min-width:768px) 172px,  
+                (min-width:320px) 264px, 
+                100vw"
+                alt="image-cases-8"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Post -->
+      <section class="post">
+        <div class="post__container">
+          <picture>
+            <source
+              media="(min-width:1360px)"
+              srcset="./image/post/post-d-@1x.jpg 1x, ./image/post/post-d-@2x.jpg 2x"
+            />
+            <source
+              media="(min-width:768px)"
+              srcset="./image/post/post-t-@1x.jpg 1x, ./image/post/post-t-@2x.jpg 2x"
+            />
+            <source
+              media="(min-width:320px)"
+              srcset="./image/post/post-m-@1x.jpg 1x, ./image/post/post-m-@2x.jpg 2x"
+            />
+            <img class="post__img" src="./image/post/post-m-@1x.jpg" alt="foto section post" />
+          </picture>
+          <div class="post__wrapper">
+            <p class="uppertitle">April 16 2020</p>
+            <h2 class="title">Blog Post One</h2>
+            <p class="post__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos
+              quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores
+              itaque rerum temporibus doloribus iste maiores deleniti?
+            </p>
+            <a class="btn__link" href="" class="post__link">Read Our Blog</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team -->
+      <section class="team">
+        <div class="team__container">
+          <p class="uppertitle team__uppertitle">Who we are</p>
+          <h2 class="title">Our Professional Team</h2>
+          <p class="team__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!
+          </p>
+          <ul class="team__list card-set">
+            <li class="card card-set__item">
+              <img
+                class="card__img"
+                srcset="
+                  ./image/team/card-m-1_280.jpg   280w,
+                  ./image/team/card-m-1_280x2.jpg 560w,
+                  ./image/team/card-t-1_223.jpg   223w,
+                  ./image/team/card-t-1_223x2.jpg 446w,
+                  ./image/team/card-d-1_420.jpg   420w,
+                  ./image/team/card-d-1_420x2.jpg 840w
+                "
+                sizes="
+                (min-width:1360px) 420px,
+                (min-width:768px) 223px,
+                (min-width:320px) 280px,
+                100vw
+                "
+                src="./image/team/card-m-1_280.jpg "
+                alt="team-card 1"
+              />
+              <h3 class="card__name">John Doe</h3>
+              <p class="card__position">President</p>
+            </li>
+            <li class="card card-set__item">
+              <img
+                class="card__img"
+                srcset="
+                  ./image/team/card-m-2_280.jpg   280w,
+                  ./image/team/card-m-2_280x2.jpg 560w,
+                  ./image/team/card-t-2_223.jpg   223w,
+                  ./image/team/card-t-2_223x2.jpg 446w,
+                  ./image/team/card-d-2_420.jpg   420w,
+                  ./image/team/card-d-2_420x2.jpg 840w
+                "
+                sizes="
+                (min-width:1360px) 420px,
+                (min-width:768px) 223px,
+                (min-width:320px) 280px,
+                100vw
+                "
+                src="./image/team/card-m-2_280.jpg "
+                alt="team-card 1"
+              />
+              <h3 class="card__name">Jane Doe</h3>
+              <p class="card__position">Vice President</p>
+            </li>
+            <li class="card card-set__item">
+              <img
+                class="card__img"
+                srcset="
+                  ./image/team/card-m-3_280.jpg   280w,
+                  ./image/team/card-m-3_280x2.jpg 560w,
+                  ./image/team/card-t-3_223.jpg   223w,
+                  ./image/team/card-t-3_223x2.jpg 446w,
+                  ./image/team/card-d-3_420.jpg   420w,
+                  ./image/team/card-d-3_420x2.jpg 840w
+                "
+                sizes="
+                (min-width:1360px) 420px,
+                (min-width:768px) 223px,
+                (min-width:320px) 280px,
+                100vw
+                "
+                src="./image/team/card-m-3_280.jpg "
+                alt="team-card 1"
+              />
+              <h3 class="card__name">Steve Smith</h3>
+              <p class="card__position">Marketing Head</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Callback -->
+    <section class="callback">
+      <div class="callback__container">
+        <h2 class="title callback__title">Request Callback</h2>
+        <form class="form">
+          <div class="form__group">
+            <label class="form__field">
+              <!-- <span class="form__label">Name</span> -->
+              <input class="form__input" type="text" placeholder="Enter your name" required />
+            </label>
+            <label class="form__field">
+              <!-- <span class="form__label">Email</span> -->
+              <input class="form__input" type="email" placeholder="Enter email*" required />
+            </label>
+          </div>
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container">
+        <ul class="socials">
+          <li class="socials__item">
+            <a
+              class="socials__link"
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              aria-label="Facebook"
+            >
+              <svg
+                class="socials__icon"
+                width="35"
+                height="35"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                aria-label="Facebook"
+              >
+                <use href="./image/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a
+              class="socials__link"
+              href="https://www.twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              aria-label="Twitter"
+            >
+              <svg class="socials__icon" width="35" height="35">
+                <use href="./image/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a
+              class="socials__link"
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              aria-label="Youtube"
+            >
+              <svg class="socials__icon" width="35" height="35">
+                <use href="./image/icons.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a
+              class="socials__link"
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              aria-label="Linkedin"
+            >
+              <svg class="socials__icon" width="35" height="35">
+                <use href="./image/icons.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <p class="footer__text">Copyright © 2021 - FinanceLedger</p>
+      </div>
+    </footer>
+  </body>
+</html>

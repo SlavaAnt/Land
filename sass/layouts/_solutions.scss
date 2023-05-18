@@ -1,0 +1,39 @@
+.solutions {
+  color: var(--t-white-color);
+  text-align: left;
+
+  &__container {
+    @include container;
+    padding: 0;
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+    }
+  }
+
+  &__img {
+    @extend %img;
+  }
+
+  &__content {
+    background-color: var(--accent-color);
+    padding: 30px;
+
+    @media screen and (min-width: $tablet) {
+      width: calc(100% / 2);
+      padding: 30px 55px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding: 84px 55px;
+    }
+  }
+
+  &__description {
+    margin-bottom: 14px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.post {
+  &__container {
+    @include container;
+    padding: 0;
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__wrapper {
+    color: var(--t-white-color);
+    background-color: var(--bg-blue-color);
+
+    padding: 30px;
+
+    @media screen and (min-width: $tablet) {
+      width: calc(100% / 2);
+      padding: 30px 40px 30px 30px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: calc(100% / 2);
+      padding: 112px 50px 112px 40px;
+    }
+  }
+
+  .title--white {
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    margin-bottom: 14px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 20px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 16px;
+    }
+  }
+
+  .btn__link {
+  }
+
+  &__img {
+    @extend %img;
+  }
+}

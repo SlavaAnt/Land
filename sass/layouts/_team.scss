@@ -1,0 +1,45 @@
+.team {
+  padding: 50px 0;
+  text-align: center;
+
+  &__container {
+    @include container;
+
+    @media screen and (max-width: $mobile) {
+      padding: 0 20px;
+    }
+  }
+
+  &__uppertitle {
+    margin-bottom: 15px;
+  }
+
+  .title {
+  }
+
+  &__text {
+    margin-bottom: 37px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 47px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__list {
+    @extend %list;
+
+    --indent-row: 10px;
+    --indent-column: 0;
+
+    @media screen and (min-width: $tablet) {
+      --items: 3;
+      --indent-column: 21.5px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      --indent-column: 22px;
+    }
+  }
+}

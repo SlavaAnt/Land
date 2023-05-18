@@ -95,7 +95,7 @@ body {
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -684,6 +684,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
+}
+.btn--left {
+  margin-left: 0;
 }
 .btn__icon {
   fill: var(--t-white-color);

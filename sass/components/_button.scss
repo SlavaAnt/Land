@@ -15,6 +15,10 @@
   align-items: center;
   margin: 0 auto;
 
+  &--left {
+    margin-left: 0;
+  }
+
   &__icon {
     fill: var(--t-white-color);
     margin-right: 5px;
